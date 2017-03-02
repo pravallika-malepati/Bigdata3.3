@@ -1,0 +1,37 @@
+                                    HDFS
+                             Assignment 3.3
+ 
+Components of hadoop2.X:
+  *Hadoop 2.x is the next version of hadoop1.x which overcomes the drawbacks in hadoop1.x.
+  *COMPONENTS:
+                    HDFS
+                    YARN
+                    MapReduce
+  *Hadoop Common Module is a Hadoop Base API (A Jar file) for all Hadoop Components. 
+    All other components works on top of this module.
+  *HDFS stands for Hadoop Distributed File System. It is also know as HDFS V2 as it is part of Hadoop 2.x with some enhanced features.  
+    It is used as a Distributed Storage System in Hadoop Architecture.
+  *YARN stands for Yet Another Resource Negotiator. It is new Component in Hadoop 2.x Architecture. It is also know as “MR V2”.
+  *MapReduce is a Batch Processing or Distributed Data Processing Module. It is also know as “MR V1” as it is part of Hadoop 1.x with some updated features.
+  *Remaining all Hadoop Ecosystem components work on top of these three major components: HDFS, YARN ,Map reduce.
+  *Each node can act as :  1.Master node  2.Slave node
+  *All Master Nodes and Slave Nodes contains both MapReduce and HDFS Components.
+  *One Master Node has two components:
+              Resource Manager(YARN or MapReduce v2)
+              HDFS
+  *In Hadoop 2.x, some more Nodes acts as Master Nodes as shown in the above diagram. 
+    Each this 2nd level Master Node has 3 components:
+             Node Manager
+             Application Master
+             Data Node
+
+  *Each this 2nd level Master Node again contains one or more Slave Nodes
+    These Slave Nodes have two components:
+             Node Manager
+             HDFS
+  *Resource Manager is again divided into two components:
+            Scheduler:Responsible to scheduler required resources to Applications 
+           Application Manager:Managing assigned Application Life cycle.
+ *Node Manager:responsible for Managing the life-cycle of container.
+ *Container:Each Master Node or Slave Node contains set of Containers.
+                    Container is a portion of Memory in HDFS (Either Name Node or Data Node).
